@@ -16,7 +16,8 @@ public class tuitionRate {
 		double tuitionSum = 0;
 
 		for (int j = 1; j <= 4; j++) {
-			tuitionSum = tuitionSum + (initTuition * Math.pow(10, tuitRate));
+			initTuition = initTuition + (initTuition * tuitRate);
+			tuitionSum = tuitionSum + initTuition;
 
 			
 
