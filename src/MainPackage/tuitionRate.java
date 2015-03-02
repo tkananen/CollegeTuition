@@ -14,15 +14,17 @@ public class tuitionRate {
 		double percentageInc = input.nextDouble();
 		double tuitRate = percentageInc / 100;
 		double tuitionSum = 0;
+		double tuitionCounter = initTuition;
 
-		for (int j = 1; j <= 4; j++) {
-			initTuition = initTuition + (initTuition * tuitRate);
-			tuitionSum = tuitionSum + initTuition;
+		for (int j = 0; j < 3; j++) {
+			tuitionCounter = tuitionCounter + (tuitionCounter * tuitRate);
+			tuitionSum = tuitionSum + tuitionCounter;
 
 			
 
 		}
-		System.out.printf("After four years, your  total tuition costs comes to: $%.2f%n ", tuitionSum);
+		double tuitTotal = tuitionSum + initTuition;
+		System.out.printf("After four years, your  total tuition costs comes to: $%.2f%n ", tuitTotal);
 
 	}
 }
